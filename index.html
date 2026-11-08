@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hasti Campaign Brief</title>
+    <meta
+      name="description"
+      content="AI-powered content and campaign planning dashboard."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-wrap">
+          <div class="brand-mark">H</div>
+          <div>
+            <p class="eyebrow">workspace</p>
+            <h2>Hasti</h2>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <button class="nav-item active">Overview</button>
+          <button class="nav-item">Campaigns</button>
+          <button class="nav-item">Content</button>
+          <button class="nav-item">Calendar</button>
+          <button class="nav-item">Reports</button>
+        </nav>
+
+        <div class="mini-card">
+          <p class="eyebrow">AI brief status</p>
+          <h3>Ready for launch</h3>
+          <div class="progress">
+            <span>92%</span>
+            <div class="progress-bar">
+              <i></i>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Campaign command center</p>
+            <h1>Q4 Growth Sprint</h1>
+          </div>
+
+          <div class="topbar-actions">
+            <button class="ghost-btn">Export brief</button>
+            <button class="primary-btn">Generate plan</button>
+          </div>
+        </header>
+
+        <section class="hero-panel">
+          <div class="hero-copy">
+            <div class="status-pill">Live strategy</div>
+            <h2>AI-powered campaign planning for faster execution.</h2>
+            <p>
+              Align briefs, channels, content ideas, and performance signals in one
+              operational dashboard designed for high-velocity marketing teams.
+            </p>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-tag">
+              <span>Audience match</span>
+              <strong>87%</strong>
+            </div>
+            <div class="metric-tag">
+              <span>Content velocity</span>
+              <strong>4.8x</strong>
+            </div>
+          </div>
+        </section>
+
+        <section id="stats" class="stats-grid"></section>
+
+        <section class="content-grid">
+          <div class="panel wide-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Performance view</p>
+                <h3>Campaign pipeline</h3>
+              </div>
+              <button class="link-btn">View all</button>
+            </div>
+            <div id="pipeline" class="pipeline-list"></div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">AI insights</p>
+                <h3>Recommendations</h3>
+              </div>
+            </div>
+            <div id="insights" class="insights-list"></div>
+          </div>
+        </section>
+
+        <section class="panel bottom-panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Editorial runway</p>
+              <h3>Upcoming content calendar</h3>
+            </div>
+            <button class="link-btn">Sync calendar</button>
+          </div>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Channel</th>
+                <th>Theme</th>
+                <th>Owner</th>
+                <th>Date</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="calendar-body"></tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
